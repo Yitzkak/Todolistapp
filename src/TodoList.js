@@ -1,4 +1,5 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
+import TodoItems from './TodoItems.js';
 
 
 class TodoList extends Component {
@@ -34,13 +35,15 @@ class TodoList extends Component {
 
     render(){
         return(
-            <div className="todoListMain">
+            <div className="todoListMain ">
+                <div className="app"></div>
                 <div className="header">
                     <form onSubmit= {this.addItem}>
                         <input type="text" ref = {a => this.inputElement = a} placeholder="Enter text"/>
-                        <button type="submit">add task</button>
+                        <button type="submit" className="btn">add task</button>
                     </form>
                 </div>
+                <TodoItems entries = {this.state.items}/>
             </div>
         )
     }

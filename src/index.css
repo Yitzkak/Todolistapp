@@ -1,9 +1,9 @@
 body{
     margin: 0px;
-    padding: 50px;
-    background-color: #66CCFF;
+    padding: 0px;
 }
- #container{
+ #container{ 
      display: flex;
      justify-content: flex;
+     background-color: #ff6347;
  }
